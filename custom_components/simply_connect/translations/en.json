@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Simply Connect (FAAC/Rossi)",
+        "description": "Entre com o email e senha da sua conta Simply Connect.",
+        "data": {
+          "identifier": "Email",
+          "password": "Senha"
+        }
+      },
+      "mfa_email": {
+        "title": "Código de verificação",
+        "description": "Sua conta exige confirmação por e-mail. Digite o código que você recebeu.",
+        "data": {
+          "code": "Código recebido por e-mail"
+        }
+      },
+      "authorize": {
+        "title": "Autorização automática falhou",
+        "description": "Não consegui autorizar o Home Assistant automaticamente no(s) portão(ões) dessa conta. Clique em Enviar para tentar de novo (não precisa fazer login nem digitar o código outra vez)."
+      },
+      "reauth_confirm": {
+        "title": "Entre de novo no Simply Connect",
+        "description": "A sessão da conta {identifier} expirou ou foi revogada. Digite a senha atual para renovar.",
+        "data": {
+          "password": "Senha"
+        }
+      },
+      "reauth_mfa_email": {
+        "title": "Código de verificação",
+        "description": "Sua conta exige confirmação por e-mail. Digite o código que você recebeu.",
+        "data": {
+          "code": "Código recebido por e-mail"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email ou senha incorretos.",
+      "invalid_otp": "Código incorreto ou expirado.",
+      "unsupported_mfa": "Sua conta exige um tipo de MFA (app autenticador) que esta integração ainda não suporta — só e-mail é suportado.",
+      "cannot_connect": "Não foi possível conectar ao Simply Connect.",
+      "no_access_points": "Nenhum portão encontrado nesta conta.",
+      "not_authorized_yet": "A autorização automática não funcionou pra nenhum portão. Tente de novo — se continuar falhando, pode ser um problema temporário no Simply Connect.",
+      "unknown": "Erro inesperado."
+    },
+    "abort": {
+      "already_configured": "Esta conta já está configurada.",
+      "reauth_successful": "Sessão renovada com sucesso."
+    }
+  },
+  "entity": {
+    "cover": {
+      "gate": {
+        "state": {
+          "open": "Aberto",
+          "closed": "Fechado",
+          "opening": "Abrindo",
+          "closing": "Fechando",
+          "stopped": "Parado"
+        }
+      }
+    }
+  }
+}

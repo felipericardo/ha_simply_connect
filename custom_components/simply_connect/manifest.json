@@ -1,0 +1,11 @@
+{
+  "domain": "simply_connect",
+  "name": "Simply Connect (FAAC/Rossi)",
+  "codeowners": ["@felipericardo"],
+  "config_flow": true,
+  "documentation": "https://github.com/felipericardo/ha_simply_connect",
+  "issue_tracker": "https://github.com/felipericardo/ha_simply_connect/issues",
+  "iot_class": "cloud_polling",
+  "requirements": ["cryptography>=41.0.0"],
+  "version": "1.0.0"
+}
